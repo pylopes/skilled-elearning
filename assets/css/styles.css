@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --font-pjakarta: "Plus Jakarta Sans", sans-serif;
+    --blue900: #13183F;
+    --blue600: #666CA3;
+    --pink600: #F74780;
+    --pink300: #FFA7C3;
+    --grey: #83869A;
+    --white: #FFFFFF;
+    --gradient-pink: linear-gradient( #FF6F48, #F02AA6);
+    --gradient-pink2: linear-gradient( rgba(255, 111, 72, 0.5), rgba(240, 42, 166, 0.5));
+    --gradient-purple: linear-gradient(#4851FF, #F02AA6);
+    --gradient-purple2: linear-gradient(rgba(72, 81, 255, 0.5), rgba(240, 42, 166,0.5));
+    --gradient-white: linear-gradient(#FFFFFF, #F0F1FF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* HEADER */
+
+header {
+    padding: 16px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > img {
+    width: 79px;
+    height: 20px;
+}
+
+.btn-black {
+    padding: 12px 24px;
+    background-color: var(--blue900);
+    color: var(--white);
+    border-radius: 28px;
+    font-size: 1.6em;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-family: var(--font-pjakarta);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+/* SECTION - HERO */
+
+.hero {
+    padding: 64px 20px;
+
+}
+
+.hero-text > h1 {
+    color: var(--blue900);
+    font-family: var(--font-pjakarta);
+    font-size: 4em;
+    line-height: 120%;
+    letter-spacing: 0px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.hero-text > p {
+    color: var(--grey);
+    font-family: var(--font-pjakarta);
+    font-size: 1.8em;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.hero-text > .btn-orange {
+    padding: 12px 24px;
+    background-image: var(--gradient-pink);
+    color: var(--white);
+    border-radius: 28px;
+    font-size: 1.6em;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-family: var(--font-pjakarta);
+    font-weight: 700;
+    border: none;
+    margin-bottom: 48px;
+    cursor: pointer;
+}
+
+.hero-img {
+    transition: transform 0.5s ease;
+}
+
+.hero-img > picture > img {
+    width: 100%;
+}
+
+/* SECTION CONTENT */
+
+.content {
+    padding: 64px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-image: var(--gradient-white);
+}
+
+.content > .content-title {
+    padding: 32px;
+    background-image: var(--gradient-pink);
+    color: var(--white);
+    font-family: var(--font-pjakarta);
+    font-weight: 800;
+    font-size: 1.5em;
+    letter-spacing: 0px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    padding: 64px 32px 40px 32px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--white);
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.card-img {
+    position: absolute;
+    top: -25px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card-text > h3 {
+    color: var(--blue900);
+    font-family: var(--font-pjakarta);
+    font-size: 2em;
+    line-height: 120%;
+    font-weight: 800;
+}
+
+.card-text > p {
+    color: var(--grey);
+    font-family: var(--font-pjakarta);
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.card-text > a {
+    text-decoration: none;
+    color: var(--pink600);
+    font-family: var(--font-pjakarta);
+    font-size: 1.8em;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--blue900);
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > img {
+    width: 79px;
+    height: 20px;
+}
+
+.btn-purple {
+    padding: 12px 24px;
+    background-image: var(--gradient-purple);
+    color: var(--white);
+    border-radius: 28px;
+    font-size: 1.6em;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-family: var(--font-pjakarta);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+/* TABLET DESIGN */
+@media (width >= 768px) and (width < 1024px) {
+
+    /* HEADER */
+
+    header {
+        padding: 24px 44px;
+    }
+
+    nav > img {
+        width: 108px;
+        height: 28px;
+    }
+
+    .btn-black {
+        padding: 16px 32px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    /* SECTION - HERO */
+
+    .hero {
+        display: flex;
+        padding: 64px 44px;
+        overflow-x: clip;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    .hero-text > .btn-orange {
+        padding: 16px 32px;
+        cursor: pointer;
+    }
+
+    .hero-img {
+        flex: 1;
+        transform: scale(1.5,1.5);
+        position: relative;
+        right: -170px;
+        top: -70px;
+        z-index: 1;
+    }
+
+    /* SECTION CONTENT */
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 64px 44px 144px 44px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 24px 44px;
+    }
+
+    .btn-purple {
+        padding: 16px 32px;
+    }
+}
+
+/* DESKTOP DESIGN */
+@media (width >= 1024px) {
+
+    /* HEADER */
+
+    header {
+        max-width: 1440px;
+        margin: auto;
+        padding: 24px 80px;
+    }
+
+    nav {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    nav > img {
+        width: 108px;
+        height: 28px;
+    }
+
+    .btn-black {
+        padding: 16px 32px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .btn-black:hover {
+        background-color: var(--blue600);
+    }
+
+    /* MAIN */
+
+    main {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    /* SECTION - HERO */
+
+    .hero {
+        display: flex;
+        align-items: center;
+        padding: 64px 80px;
+        overflow-x: clip;
+        gap: 32px;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    .hero-text > .btn-orange {
+        padding: 16px 32px;
+        cursor: pointer;
+    }
+
+    .hero-text > .btn-orange:hover {
+        background-image: var(--gradient-pink2);
+    }
+
+    .hero-img {
+        flex: 1;
+        transform: scale(1.5,1.5);
+        position: relative;
+        right: -250px;
+        top: -100px;
+        z-index: 1;
+    }
+
+    /* SECTION CONTENT */
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 64px 80px 144px 80px;
+    }
+
+    .card-text > a:hover {
+        color: var(--pink300);
+    }
+
+    /* FOOTER */
+
+    footer {
+        max-width: 1440px;
+        margin: auto;
+        padding: 24px 80px;
+    }
+
+    .btn-purple:hover {
+        background-image: var(--gradient-purple2);
+    }
+}
