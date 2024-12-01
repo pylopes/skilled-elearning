@@ -9,7 +9,7 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 
 ### Links
 
-- Live Site URL: [FAQ Workit landing page]()
+- Live Site URL: [Skilled e-learning landing page](https://pylopes.github.io/skilled-elearning/)
 
 ### Built with
 
